@@ -65,7 +65,7 @@ h1 {
     height: 250px;
     border-radius: 50%;
     border-width: 5px;
-    border-color: red;
+
 }
 
 /* Adjustement of Picture in Mobile */
@@ -78,6 +78,9 @@ h1 {
 }
 
 /*Dark Mode Toggle */
+
+
+
 #themeToggle {
     background-color: #655A7C;
     font-family: Garamond, sans-serif;
@@ -88,7 +91,7 @@ h1 {
     cursor: pointer;
     margin-top: 10px;
    border-radius: 5px;
-}
+} 
 
 #themeToggle:hover {
     background-color: #CEF9F2;
