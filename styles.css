@@ -78,6 +78,13 @@ h1 {
    border-radius: 5px;
 }
 
+#themeToggle:hover {
+    background-color: #CEF9F2;
+    color:#655A7C;
+    border-radius: 20px;
+    transition: 2s,  ease-in-out;
+
+}
 /* Description Button */
 .showDesc {
     display: inline-block;
@@ -95,6 +102,8 @@ h1 {
 .showDesc:hover {
     background-color: #D6CA98;
     color: #CEF9F2;
+    border-radius: 10px;
+    transition: 2s, ease-in-out;
 }
 
 
@@ -152,7 +161,7 @@ form button {
     padding: 10px;
     background-color: #AB92BF;
     font-family: Garamond, sans-serif;
-    color: #fff;
+    color: #CEF9F2;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -160,6 +169,10 @@ form button {
 
 form button:hover {
     background-color: #655A7C;
+    color: #D6CA98;
+    border-radius: 30px;
+    transition: 2s, ease-in-out;
+
 }
 
 
@@ -237,6 +250,12 @@ body.dark-mode #themeToggle {
     font-weight: strong;
 } 
 
+body.dark-mode #themeToggle:hover {
+    background-color: #D6CA98;
+    color: #AB92BF;
+    font-weight: strong;
+    transition: 2s, ease-in-out;
+} 
 body.dark-mode h2 {
     color: #AB92BF;
 }
