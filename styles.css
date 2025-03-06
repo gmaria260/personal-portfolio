@@ -1,0 +1,253 @@
+
+
+/* Main Page Code */
+body {
+    font-family: Garamond, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #655A7C;
+}
+
+a:hover {
+    color: #D6CA98;
+}
+
+header {
+    background-color: #AB92BF;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #D6CA98;
+}
+
+hr {
+    border: 2px, dotted #D6CA98;
+}
+
+h1 {
+    color:#655A7C;
+}
+
+
+/* header image box */
+.prof-imagebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+   
+ }
+
+ .profpic {   
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: red;
+}
+
+/* Adjustement of Picture in Mobile */
+@media only screen and (max-width: 284px) {
+.profpic {   
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+}
+
+/*Dark Mode Toggle */
+#themeToggle {
+    background-color: #655A7C;
+    font-family: Garamond, sans-serif;
+    color: #CEF9F2;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+   border-radius: 5px;
+}
+
+/* Description Button */
+.showDesc {
+    display: inline-block;
+    float: right;
+    background-color: #655A7C;
+    font-family: Garamond, sans-serif;
+    color: #D6CA98;
+    font-weight: bold;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.showDesc:hover {
+    background-color: #D6CA98;
+    color: #CEF9F2;
+}
+
+
+/* Skills and Project Section */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.10);
+}
+
+h2 {
+    color: #655A7C;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #e8daf0;
+    color: #655A7C;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section #projectList {
+    display: flex;
+    flex-direction: column;   
+}
+
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #AB92BF;
+    font-family: Garamond, sans-serif;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #655A7C;
+}
+
+
+#formMessage {
+    display: flex;
+    justify-content: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #AB92BF;
+    color: #655A7C;
+    margin-top : auto; 
+}
+
+footer ul {
+    list-style: none;
+    text-align: left;
+}
+footer ul li {
+        background-color: #e8daf0;
+        color: #655A7C;
+        border-radius: 5px;
+
+}
+
+/* Dark Mode Codes */
+
+body.dark-mode {
+    background-color: #222;
+}
+
+
+body.dark-mode section {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+body.dark-mode ul li {
+    background-color: #AB92BF;
+    color:#CEF9F2 ;
+}
+
+body.dark-mode header {
+    background-color: #655A7C;
+}
+    
+
+
+body.dark-mode header h1 {
+    color: #CEF9F2;
+    
+}
+body.dark-mode form input, body.dark-mode form textarea {
+    background-color: #555;
+    color: #f4f4f4;
+    border: 1px solid #777;
+}
+
+body.dark-mode form button {
+    background-color: #CEF9F2;
+    color: #655A7C;
+}
+
+body.dark-mode footer {
+    background-color: #655A7C;
+    color: #CEF9F2;
+}
+
+body.dark-mode #themeToggle {
+    background-color: #AB92BF;
+    color: #D6CA98;
+    font-weight: strong;
+} 
+
+body.dark-mode h2 {
+    color: #AB92BF;
+}
+
+body.dark-mode h1 {
+    color: #AB92BF;
+}
+
+body.dark-mode hr {
+     border: 2px, dotted #CEF9F2;
+
+}
+
+

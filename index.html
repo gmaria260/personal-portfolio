@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width:device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="library.png">
+<title> My Portfolio </title>
+<link rel = "stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/3142eebea3.js" crossorigin="anonymous"></script>
+
+<head>
+   
+    <body>
+        <header>
+            <hr>
+            <h1>Welcome to my Portfolio </h1>
+            <hr>
+        <button id = "themeToggle" onclick="toggleDarkMode()"></i> Toggle Dark Mode </button>
+    </header>
+    
+    <section id ="about">
+        <center>
+        <h1> About Me </h1>
+        </center>
+        <hr>
+       <div class = "prof-imagebox"><image class="profpic" src="gorospe.jpg"></image></div>
+       <center>
+        <p> My name is Maria Angela C. Gorospe. This Portfolio will showcase my skills as it improves through the years of being a Information Technology Student </p>
+    </center>
+    </section>
+
+
+    <section id = "projects">
+        <h2><i class="fa-solid fa-paperclip"></i> Projects</h2>
+        <hr>
+        <ul id ="projectList">
+        <!-- added via java script-->
+        </ul>
+    </section>
+
+    <section id = "skills">
+        <h2><i class="fa-solid fa-suitcase"></i> Skills </h2>
+        <hr>
+        <ul id ="skillsList">
+        <!-- added via java script-->
+        </ul>
+    </section>
+
+    <section id = "contact">
+        <h2><i class="fa-solid fa-phone"></i> Contact Me </h2>
+        <form id = "contactForm">
+        <label for="name"> Name </label>
+        <input type="text" id="name" required>
+        <label for="email"> Email </label>
+        <input type="email" id="email" required>
+        <label for="message"> Message </label>
+        <textarea id="message" required></textarea>
+        <button type="submit">Send</button>
+        </form>
+          <p id = "formMessage"></p>
+        
+    </section>
+
+    
+    
+   
+    </body>
+
+    <footer>
+        <p style="font-size:25px;"> 2025 ~ My Portfolio </p>
+        <p> Today is:</p>
+        <p id = "currentDate"></p>
+            <hr>
+            <h3> Contacts: </h3>
+              <ul>
+                <li><i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/mariaangela.gorospe.1/">Facebook</li></a>
+                <li><i class="fa-solid fa-envelope"></i> Gmail: gorospemaria4769@gmail.com</p></li>
+                <li><i class="fa-brands fa-github"></i> <a href="https://github.com/gmaria260Github"> Github</li></a>
+            
+                </ul>
+              <br>
+              <hr>
+        
+              <script src="script.js"> </script>
+    </footer>
+
+
+</head>
+</html>
