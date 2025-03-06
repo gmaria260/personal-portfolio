@@ -4,7 +4,7 @@ Personal Portfolio Website by Gorospe, Maria Angela C.
 
 Introduction
 ----------------------------------------------------
-This is a personal portfolio website using HTML, CSS and Javascript to showcase skills and coding projects for future use for employment. It is made for a school project.
+This is a personal portfolio website using HTML, CSS and Javascript to showcase skills and coding projects for future use. It is made for a school project.
 
 Features:
 - Dark Mode Toggling
