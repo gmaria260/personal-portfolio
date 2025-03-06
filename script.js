@@ -150,7 +150,7 @@ function toggleDarkMode() {
 }
 
 
-/* Gets current date on System Locale */
+/* Gets current date on System Locale and displays it in the format of weekday - year - month - day*/
 const date = new Date();
 currentDate.textContent = date.toLocaleDateString("en-US", {
     weekday: "long", year: "numeric", month: "long", day: "numeric"

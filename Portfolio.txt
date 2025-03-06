@@ -1,0 +1,537 @@
+
+\\ HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width:device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="library.png">
+<title> My Portfolio </title>
+<link rel = "stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/3142eebea3.js" crossorigin="anonymous"></script>
+
+<head>
+   
+    <body>
+        <header>
+            <hr>
+            <img class="header-image" src="library.png">
+            <h1>Welcome to my Portfolio </h1>
+            <hr>
+        <button id = "themeToggle" onclick="toggleDarkMode()"></i> Toggle Dark Mode </button>
+    </header>
+    
+    <section id ="about">
+        <center>
+        <h1> About Me </h1>
+        </center>
+        <hr>
+       <div class = "prof-imagebox"><image class="profpic" src="gorospe.jpg"></image></div>
+       <center>
+        <p> My name is Maria Angela C. Gorospe. This Portfolio will showcase my skills as it improves through the years as an Information Technology Student </p>
+    </center>
+    </section>
+
+
+    <section id = "projects">
+        <h2><i class="fa-solid fa-paperclip"></i> Projects</h2>
+        <hr>
+        <ul id ="projectList">
+        <!-- added via java script-->
+        </ul>
+    </section>
+
+    <section id = "skills">
+        <h2><i class="fa-solid fa-suitcase"></i> Skills </h2>
+        <hr>
+        <ul id ="skillsList">
+        <!-- added via java script-->
+        </ul>
+    </section>
+
+    <section id = "contact">
+        <h2><i class="fa-solid fa-phone"></i> Contact Me </h2>
+        <form id = "contactForm">
+        <label for="name"> Name </label>
+        <input type="text" id="name" required>
+        <label for="email"> Email </label>
+        <input type="email" id="email" required>
+        <label for="message"> Message </label>
+        <textarea id="message" required></textarea>
+        <button type="submit">Send</button>
+        </form>
+          <p id = "formMessage"></p>
+        
+    </section>
+
+    
+    
+   
+    </body>
+
+    <footer>
+        <p style="font-size:25px;"> 2025 ~ My Portfolio </p>
+        <p> Today is:</p>
+        <p id = "currentDate"></p>
+            <hr>
+            <h3> Contacts: </h3>
+              <ul>
+                <li><i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/mariaangela.gorospe.1/">Facebook</li></a>
+                <li><i class="fa-solid fa-envelope"></i> Gmail: gorospemaria4769@gmail.com</p></li>
+                <li><i class="fa-brands fa-github"></i> <a href="https://github.com/gmaria260Github"> Github</li></a>
+            
+                </ul>
+              <br>
+              <hr>
+        
+              <script src="script.js"> </script>
+    </footer>
+
+
+</head>
+</html>
+
+\\ CSS
+/* Main Page Code */
+body {
+    font-family: Garamond, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #655A7C;
+}
+
+a:hover {
+    color: #D6CA98;
+}
+
+header {
+    background-color: #AB92BF;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #D6CA98;
+}
+
+hr {
+    border: 2px, dotted #D6CA98;
+}
+
+h1 {
+    color:#655A7C;
+}
+
+.header-image {
+    width: 25%;
+}
+
+@media only screen and (max-width: 320px) {
+    .header-image {   
+        width: 50%;
+        
+        
+    }
+    }
+
+
+/* introduction image box */
+.prof-imagebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+   
+ }
+
+ .profpic {   
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: red;
+}
+
+/* Adjustement of Picture in Mobile */
+@media only screen and (max-width: 284px) {
+.profpic {   
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+}
+
+/*Dark Mode Toggle */
+#themeToggle {
+    background-color: #655A7C;
+    font-family: Garamond, sans-serif;
+    color: #CEF9F2;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+   border-radius: 5px;
+}
+
+#themeToggle:hover {
+    background-color: #CEF9F2;
+    color:#655A7C;
+    border-radius: 20px;
+    transition: 2s,  ease-in-out;
+
+}
+/* Description Button */
+.showDesc {
+    display: inline-block;
+    float: right;
+    background-color: #655A7C;
+    font-family: Garamond, sans-serif;
+    color: #D6CA98;
+    font-weight: bold;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.showDesc:hover {
+    background-color: #D6CA98;
+    color: #CEF9F2;
+    border-radius: 10px;
+    transition: 2s, ease-in-out;
+}
+
+
+/* Skills and Project Section */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.10);
+}
+
+h2 {
+    color: #655A7C;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #e8daf0;
+    color: #655A7C;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section #projectList {
+    display: flex;
+    flex-direction: column;   
+}
+
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #AB92BF;
+    font-family: Garamond, sans-serif;
+    color: #CEF9F2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #655A7C;
+    color: #D6CA98;
+    border-radius: 30px;
+    transition: 2s, ease-in-out;
+
+}
+
+
+#formMessage {
+    display: flex;
+    justify-content: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #AB92BF;
+    color: #655A7C;
+    margin-top : auto; 
+}
+
+footer ul {
+    list-style: none;
+    text-align: left;
+}
+footer ul li {
+        background-color: #e8daf0;
+        color: #655A7C;
+        border-radius: 5px;
+
+}
+
+/* Dark Mode Codes */
+
+body.dark-mode {
+    background-color: #222;
+}
+
+
+body.dark-mode section {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+body.dark-mode ul li {
+    background-color: #AB92BF;
+    color:#CEF9F2 ;
+}
+
+body.dark-mode header {
+    background-color: #655A7C;
+}
+    
+
+
+body.dark-mode header h1 {
+    color: #CEF9F2;
+    
+}
+body.dark-mode form input, body.dark-mode form textarea {
+    background-color: #555;
+    color: #f4f4f4;
+    border: 1px solid #777;
+}
+
+body.dark-mode form button {
+    background-color: #CEF9F2;
+    color: #655A7C;
+}
+
+body.dark-mode footer {
+    background-color: #655A7C;
+    color: #CEF9F2;
+}
+
+body.dark-mode #themeToggle {
+    background-color: #AB92BF;
+    color: #D6CA98;
+    font-weight: strong;
+} 
+
+body.dark-mode #themeToggle:hover {
+    background-color: #D6CA98;
+    color: #AB92BF;
+    font-weight: strong;
+    transition: 2s, ease-in-out;
+} 
+body.dark-mode h2 {
+    color: #AB92BF;
+}
+
+body.dark-mode h1 {
+    color: #AB92BF;
+}
+
+body.dark-mode hr {
+     border: 2px, dotted #CEF9F2;
+
+}
+
+
+
+\\ Javascript
+/* Event Listeners for Project List, Skill List, and Current Date */
+document.addEventListener("DOMContentLoaded", function () {
+    const projectList = document.getElementById("projectList");
+    const skillsList = document.getElementById("skillsList");
+    const currentDate = document.getElementById("currentDate");
+});
+
+/* Project Array */
+/**  Consists of 
+* stdate (Project Starting Date)
+* endate (Project End Date)
+* title
+* desc (Include link if published on github)
+*/
+
+const projects = [
+    { stdate: "December 20, 2024", endate: "May 9, 2024", title: "Proposed Website for J and P Pares and Mami", desc: "A website made for J & P Pares and Mami for completion of requirements for graduation in Senior High School using HTML, CSS and Javascript. A collaboration done with other thesis group members (https://www.github.com/gmaria260/J-P-Home)"},
+    { stdate: "February 20, 2025", endate: "February 20,2025", title: "Random Quote Generator", desc: "Generate random quotes from various historical individuals and writers (https://gmaria260.github.io/random_quote.gen/)." },
+    { stdate: "March 3, 2025", endate: "March 6,2025", title: "Porfolio Website", desc: "Personal Portfolio website that includes projects and skills(https://gmaria260.github.io/random_quote.gen/)." },
+    { stdate: "October 21, 2025", endate: "October 25, 2025", title: "To-Do List App", desc: "A simple task management app that shows a list of kept things to do with Local Storage support."},
+    { stdate: "December 21, 2025", endate: "December 30, 2025", title: "Calculator", desc: "A basic arithmetic calculator built with HTML, CSS, and JavaScript."},
+];
+
+
+/* Creates each corresponding html element for each part of the projects */
+
+projects.forEach((project, index) => {
+    const li = document.createElement("li");
+    const title = document.createElement("em");
+    title.textContent = project.title;
+    
+
+    const button = document.createElement("button");
+    button.textContent = "Read More";
+    button.className = "showDesc";
+    button.setAttribute("data-index", index);
+    /*Code above attaches the data from the array to the elements */
+
+    const desc = document.createElement("p");
+    desc.textContent = project.desc;
+    desc.className = "project-description";
+    desc.style.display = "none";
+    desc.id = "desc-" + index;
+
+    const hr = document.createElement("hr");
+    hr.id = "pr-hr";
+
+    const stdate = document.createElement("u");
+    stdate.textContent = "Project Start Date: " + project.stdate;
+    stdate.className = "start-date";
+    stdate.style.display = "none";
+    stdate.id  = "stdate-"+ index;
+
+    const endate = document.createElement("u");
+    endate.textContent = "Project End Date: " + project.endate;
+    endate.className = "end-date";
+    endate.style.display = "none";
+    endate.id  = "endate-"+ index;
+
+
+
+    /* Appends all elements above to list element. Elements are displayed in this order*/
+    li.appendChild(button);
+    li.appendChild(title);
+    li.appendChild(stdate);
+    li.appendChild(endate);
+    li.appendChild(desc);
+    li.appendChild(hr);
+    projectList.appendChild(li);
+});
+
+/* Allows the description elements to be displayed if button is clicked */
+
+document.querySelectorAll(".showDesc").forEach(button => {
+    button.addEventListener("click", function () {
+        const index = this.getAttribute("data-index");
+        const stdate = document.getElementById("stdate-" + index);
+        const endate = document.getElementById("endate-" + index);
+        const desc = document.getElementById("desc-" + index);
+        
+     
+
+        desc.style.display = desc.style.display === "none" ? "block" : "none";
+        stdate.style.display = stdate.style.display === "none" ? "block" : "none";
+        endate.style.display = endate.style.display === "none" ? "block" : "none";
+        
+        
+        
+        this.textContent = desc.style.display === "none" ? "Read More" : "Read Less";
+
+    });
+});
+
+
+
+//For skills
+const skills = [
+    "Experienced in HTML",
+    "Experienced in CSS",
+    "Intermediate Knowledge in Javascript",
+    "Experienced in Responsive Design",
+    "Experienced in Graphic Design",
+    "Rudimentary Knowledge on Apex Oracle",
+
+];
+
+const skillsList = document.getElementById("skillsList");
+skills.forEach(skill => {
+    const li = document.createElement("li");
+    li.textContent = skill;
+    skillsList.appendChild(li);
+});
+
+//For contact form validation
+
+
+    const contactForm = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+    if (contactForm && formMessage) {
+        contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            if (name && email && message) {
+                formMessage.textContent = "Thank you for your message!";
+                formMessage.style.color = "green";
+                contactForm.reset();
+            } else {
+                formMessage.textContent = "Please fill out all fields.";
+                formMessage.style.color = "red";
+            }
+        });
+    }
+
+
+ /*Toggles Dark Mode, displays "Toggle Light Mode if it currently Dark Mode"*/
+
+function toggleDarkMode() {
+   document.body.classList.toggle("dark-mode");
+
+   if  (document.body.classList.contains("dark-mode")) {
+    themeToggle.textContent = "Toggle Light Mode";
+} else {
+    themeToggle.textContent = "Toggle Dark Mode";
+}
+}
+
+
+/* Gets current date on System Locale and displays it in the format of weekday - year - month - day*/
+const date = new Date();
+currentDate.textContent = date.toLocaleDateString("en-US", {
+    weekday: "long", year: "numeric", month: "long", day: "numeric"
+});
+
+
+
+
